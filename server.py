@@ -1,5 +1,4 @@
 from gemini_client import ask_gemini
-# test?
 from github_tools import (
     clone_repo,
     list_files,
@@ -181,7 +180,6 @@ def watch_repo(repo_path: str, mode: str = "review",  interval: int = 10) -> str
     Modes:
     review
     auto
-    notify
     """
 
     return watch_repository(repo_path, mode, interval)
@@ -287,3 +285,4 @@ def stop_repository_watch() -> str:
 
 if __name__ == "__main__":
     mcp.run()
+
